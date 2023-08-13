@@ -3,10 +3,6 @@ import axios from "axios";
 import { Text, View, SafeAreaView, StyleSheet, TouchableOpacity} from "react-native";
 import React, { useEffect, useState } from 'react'
 
-
-
-
-
 const CardColor = ({colors,onPressButton}) => {
 
     const [infoFom, setInfoFom] = useState(false);
