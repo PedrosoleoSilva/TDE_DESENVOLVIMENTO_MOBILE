@@ -4,11 +4,12 @@ import { Text, View, SafeAreaView, StyleSheet, TouchableOpacity} from "react-nat
 import React, { useEffect, useState } from 'react'
 
 const CardColor = ({colors,onPressButton}) => {
+    
 
     const [infoFom, setInfoFom] = useState(false);
     const [info2, setInfo2] = useState(false);
 
-    const fechtInfo = async() =>{
+    const fechtInfo = async () =>{
         try {
             const {data} = await axios.get('https://catfact.ninja/fact')
             const {data : data2} = await axios.get('https://catfact.ninja/fact')
@@ -26,6 +27,8 @@ const CardColor = ({colors,onPressButton}) => {
                 <Text>{info2 ? info2 : ""}</Text>
        
         </TouchableOpacity>
+
+        
       
         
     );
