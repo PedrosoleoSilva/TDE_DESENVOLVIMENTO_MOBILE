@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import CardColor from './src/screens/CardColor';
-import Cards from './src/screens/Cards';
+
+import ListPage from './src/screens/ListPage';
+import ListUniversi from './src/screens/ListUniversi';
+import UniversitiesList from './src/screens/UniversitiesList';
 
 export default function App() {
   return (
    
-        <Cards/>
-
+        <UniversitiesList/>
 
   );
 }
